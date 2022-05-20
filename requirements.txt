@@ -103,6 +103,6 @@ validators==0.19.0
 wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==3.6.0
-xgboost==1.6.1
+xgboost
 zipp==3.8.0
 zope.interface==5.4.0
