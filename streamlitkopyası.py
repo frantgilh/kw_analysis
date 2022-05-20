@@ -182,18 +182,20 @@ kwsec4 = st.sidebar.expander('KW Seçimi', expanded=False)
 keyword = kwsec4.text_input('KW ikilisi yazınız')
 
 keyword = keyword.split(',')
-
+print(keyword)
 decomp4, forecast4 = kwsec4.columns(2)
 if decomp4.button('Decomposition4'):
     data = kw.gtrends_(keyword)
     data['pair'] = data[keyword[0]]/data[keyword[1]]
     data['pair'].replace(np.inf, 0,inplace=True)
+    data.fillna(0,inplace = True)
     placeholder.empty()
     placeholder.plotly_chart(kw.plot_decomposition_px(data,'pair',isreturn=True))
 if forecast4.button('Forecast4'):
     data = kw.gtrends_(keyword)
     data['pair'] = data[keyword[0]]/data[keyword[1]]
     data['pair'].replace(np.inf, 0,inplace=True)
+    data.fillna(0,inplace = True)
     placeholder.empty()
     split_date = '2021-06-01'
     a_train = data.loc[data.index <= split_date].copy()
