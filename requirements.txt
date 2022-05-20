@@ -33,6 +33,7 @@ ipython-genutils==0.2.0
 ipywidgets==7.7.0
 jedi==0.18.1
 Jinja2==3.1.2
+joblib==1.1.0
 jsonschema==4.5.1
 jupyter-client==7.3.1
 jupyter-core==4.10.0
@@ -79,11 +80,13 @@ pytz==2022.1
 pytz-deprecation-shim==0.1.0.post0
 pyzmq==23.0.0
 requests==2.27.1
+scikit-learn==1.1.1
 scipy==1.8.1
 seaborn==0.11.2
 semver==2.13.0
 Send2Trash==1.8.0
 six==1.16.0
+sklearn==0.0
 smmap==5.0.0
 soupsieve==2.3.2.post1
 stack-data==0.2.0
@@ -91,6 +94,7 @@ statsmodels==0.13.2
 streamlit==1.9.0
 tenacity==8.0.1
 terminado==0.15.0
+threadpoolctl==3.1.0
 tinycss2==1.1.1
 toml==0.10.2
 toolz==0.11.2
@@ -103,6 +107,6 @@ validators==0.19.0
 wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==3.6.0
-xgboost
+xgboost==1.6.1
 zipp==3.8.0
 zope.interface==5.4.0
